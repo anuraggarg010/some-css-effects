@@ -3,12 +3,13 @@
     .mainnav{
       
         flex-direction: column;
-        
         padding: 5px 0px 5px 0px ;
       }
 
      .mainnav a{
         color: white;
+        
+         padding-bottom: 10px;
      }
     }
 
