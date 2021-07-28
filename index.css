@@ -24,12 +24,21 @@ to {background-image:linear-gradient(to right , red, lightgreen);}
   display: flex;
    flex-direction: row;
    justify-content: space-around;
+   margin :10px 0px 0px 0px;
    align-items: center;
-}
+   animation: mainnav  2s linear infinite;
+ 
+  }
+  @keyframes mainnav {
+    from {background-image:linear-gradient(to right , red, lightgreen);}
+  to {background-image:linear-gradient(to right , grey, darkgrey);}
+  }
 
 .mainnav a{
   font-size: 25px;
   text-decoration: none;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px white;
   color: black;
   
 
