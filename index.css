@@ -29,7 +29,7 @@ to {background-image:linear-gradient(to right , red, lightgreen);}
   display: flex;
    flex-direction: row;
    justify-content: space-around;
-   margin :10px 0px 0px 0px;
+  
    align-items: center;
    animation: mainnav  2s linear infinite;
  
