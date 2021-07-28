@@ -5,7 +5,7 @@
 }
 
 .heading{
- width: 100%;
+ width: 100vw;
  position: relative;
  animation: mainhead  2s linear infinite;
 }
@@ -25,7 +25,7 @@ to {background-image:linear-gradient(to right , red, lightgreen);}
 
 .mainnav{
    height: 30%;
-   width: 100%;
+   width: 100vw;
   display: flex;
    flex-direction: row;
    justify-content: space-around;
