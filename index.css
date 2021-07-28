@@ -1,3 +1,44 @@
+*{
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+}
+
+
+.heading h1 {
+  text-align: center;
+  color: brown;
+  text-shadow: 2px 2px 10px yellow;
+  position: relative;
+  animation: mainhead  2s linear infinite;
+ 
+}
+@keyframes mainhead {
+  from {background-image:linear-gradient(to right , grey, darkgrey);}
+to {background-image:linear-gradient(to right , red, lightgreen);}
+}
+/*--------------mainnav----------------*/
+
+.mainnav{
+   height: 30%;
+  display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.mainnav a{
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  
+
+}
+
+
+
+/*--------------button----------------*/
+
 .btn{
     border: 1px solid black;
     height: 70px;
@@ -108,12 +149,21 @@
   }
 
 /*------------transform_css------------*/
+#trnsfrmhead{
+  padding: 10px 0px 5px 10px;
+  position: relative;
+  animation: trnsfrm  4s ease-in-out infinite;
+}
+ @keyframes trnsfrm {
+  from {color: red;}
+  to {color: blue;}
+   }
 
 .trsnfrm{
     margin: 20px 0px 0px 60px;
     border: 2px solid black;
     height: 400px;
-    width: 400px;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     align-content: center;
