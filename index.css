@@ -18,8 +18,8 @@
  
 }
 @keyframes mainhead {
-  from {background-image:linear-gradient(to right , grey, darkgrey);}
-to {background-image:linear-gradient(to right , red, lightgreen);}
+  from {background-image:linear-gradient(to right , black, white);}
+to {background-image:linear-gradient(to right , white, black);}
 }
 /*--------------mainnav----------------*/
 
@@ -35,8 +35,8 @@ to {background-image:linear-gradient(to right , red, lightgreen);}
  
   }
   @keyframes mainnav {
-    from {background-image:linear-gradient(to right , red, lightgreen);}
-  to {background-image:linear-gradient(to right , grey, darkgrey);}
+    from {background-image:linear-gradient(to right , white , black);}
+  to {background-image:linear-gradient(to right , black, white);}
   }
 
 .mainnav a{
@@ -263,8 +263,166 @@ to {background-image:linear-gradient(to right , red, lightgreen);}
     height: 300px;
     transform: rotate(180deg);
   }
+
+
+  /*------------ button-----------*/
+
+.wrapper-button{
+  padding: 0%;
+  margin: 0%;
+  overflow: auto;
+}
+
+.main-container{
+  width: 1200px;
+}
+
+.button1{
+padding: 2rem;
+display: flex;
+justify-content: space-around;
+}
+
+
+
+.btn1{
+  padding: 10px 20px;
+  background-color:#073668;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.btn1::before{
+  text-align: center;
+  content: "Envolpe Button";
+  position: absolute;
+  padding: 10px 20px;
+  top: 0%;
+  left: 0%;
+  background-color:#78004b;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+.btn1:hover::before{
+  transform: rotateX(0deg);
+}
+
+.btn1::after{
+  text-align: center;
+  content: "Envolpe Button";
+  position: absolute;
+  padding: 10px 20px;
+  top: 0%;
+  left: 0%;
+  background-color:#026d40;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transform: rotateX(270deg);
+  transform-origin: bottom;
+  transition: all 0.5s;
+  transition-delay: 0.3s;
+}
+
+.btn1:hover::after{
+  transform: rotateX(0deg);
+}
+
+
+
+.button2{
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  }
   
- 
+  
+  
+  .btn2{
+    padding: 10px 20px;
+    background-color:#78004b;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    text-align: center;
+  }
+  
+  .btn2::before{
+    text-align: center;
+    content: "Envolpe Button";
+    position: absolute;
+    padding: 10px 20px;
+    top: 0%;
+    left: 0%;
+    background-color:#073668;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transform: rotateX(90deg);
+     transition: all 2s;
+  }
+  
+  .btn2:hover::before{
+    transform: rotateX(0deg);
+  }
+
+
+  .button3{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    }
+    
+    
+    
+    .btn3{
+      padding: 10px 20px;
+      background-color:#026d40;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      text-align: center;
+    }
+    
+    .btn3::before{
+      text-align: center;
+      content: "Envolpe Button";
+      position: absolute;
+      padding: 10px 20px;
+      top: 0%;
+      left: 0%;
+      background-color:#78004b;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      transform: rotateX(90deg);
+      transform-origin: top;
+      transition: all 2s;
+    }
+    
+    .btn3:hover::before{
+      transform: rotateX(0deg);
+    }
+  
+
+
+
+@media screen and (max-width: 1200px)
+{
+.main-container{
+    width: 95%;
+}
+}
 
 
  
